@@ -50,7 +50,7 @@ class PendudukController extends Controller
 
         $penduduk->save();
 
-        return redirect('penduduk');
+        return redirect()->route('penduduk.index');
     }
 
     public function edit($id)
